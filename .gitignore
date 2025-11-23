@@ -1,0 +1,42 @@
+# WordPress Core
+/wp-admin/
+/wp-includes/
+wp-config.php
+.htaccess
+
+# Uploads
+/wp-content/uploads/
+
+# Plugins (track only custom)
+/wp-content/plugins/*
+!/wp-content/plugins/smart-custom-functions/
+
+# Themes (track only custom)
+/wp-content/themes/*
+!/wp-content/themes/smart-theme/
+
+# Node & Build
+node_modules/
+*.min.js
+*.min.css
+/wp-content/themes/smart-theme/assets/dist/
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs & Backups
+*.log
+/logs/
+/backups/
+*.sql
+*.sql.gz
+
+# Security
+.env
+*.pem

@@ -1,0 +1,20 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "php.validate.executablePath": "/usr/bin/php",
+    "intelephense.stubs": [
+        "wordpress",
+        "woocommerce",
+        "wordpress-globals"
+    ],
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.php": "php"
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "smart-electronics-ecommerce",
+  "version": "1.0.0",
+  "description": "Smart Electronics E-Commerce Platform",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "sass": "sass --watch wp-content/themes/smart-theme/assets/scss:wp-content/themes/smart-theme/assets/css",
+    "sass:build": "sass wp-content/themes/smart-theme/assets/scss:wp-content/themes/smart-theme/assets/css --style compressed"
+  },
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "ecommerce"
+  ],
+  "author": "Smart Electronics Dev Team",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "sass": "^1.94.2",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  }
+}

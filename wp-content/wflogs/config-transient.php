@@ -1,0 +1,6 @@
+<?php exit('Access denied'); __halt_compiler(); ?>
+******************************************************************
+This file is used by the Wordfence Web Application Firewall. Read 
+more at https://docs.wordfence.com/en/Web_Application_Firewall_FAQ
+******************************************************************
+a:13:{s:22:"attackDataNextInterval";N;s:16:"rulesLastUpdated";i:1763819369;s:12:"premiumCount";i:6;s:12:"filePatterns";N;s:24:"filePatternCommonStrings";N;s:18:"filePatternIndexes";N;s:21:"signaturesLastUpdated";N;s:21:"signaturePremiumCount";N;s:23:"createInitialRulesDelay";i:1763966476;s:10:"watchedIPs";N;s:15:"blockedPrefixes";N;s:21:"blacklistAllowedCache";N;s:12:"lastRuleHash";s:344:"FxmrBEnXPBgwLfoGAbxYXPmCEvW7fE39wJ4mNkaPXbS09v0hZ07tDlpw1nzfBdL4TOyi97kUFBvpfXK3EylhF2QnrDPV7iGFXJ/WwCRKXSSzrIj/JplR8ZFWY+qPVcMijGmnSL3gfJB2BNRsJ7OuyEOuCv7z+qEuo5Tuyy/tu5AtnT0cOo+INNX/xhpBEC7Bob6XUBCNL9zELS6d7JLGj2H0vBnKXLAIn7kgohUQb/ymgvgjXa7hl3Ns7W84bmJqgx1NyZFytKqsRNgdykx6HtVUxhdcI/I6ENDZhjuGvg0WLtfYHI0ISY2AVsC8Vkc+XkM0rNYvGeh4AjyLMDIO4A==";}

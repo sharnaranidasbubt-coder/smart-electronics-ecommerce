@@ -1,0 +1,96 @@
+// Smart Electronics Theme Mixins
+
+// Responsive breakpoints
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media (min-width: $breakpoint-xs) { @content; }
+    } @else if $breakpoint == "sm" {
+        @media (min-width: $breakpoint-sm) { @content; }
+    } @else if $breakpoint == "md" {
+        @media (min-width: $breakpoint-md) { @content; }
+    } @else if $breakpoint == "lg" {
+        @media (min-width: $breakpoint-lg) { @content; }
+    } @else if $breakpoint == "xl" {
+        @media (min-width: $breakpoint-xl) { @content; }
+    } @else if $breakpoint == "2xl" {
+        @media (min-width: $breakpoint-2xl) { @content; }
+    }
+}
+
+// Flexbox utilities
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Typography
+@mixin heading-style($size: 'h2') {
+    font-family: $font-display;
+    font-weight: 700;
+    line-height: $line-height-heading;
+    color: $color-text-dark;
+    
+    @if $size == 'h1' {
+        font-size: 2.5rem;
+        @include respond-to('md') { font-size: 3rem; }
+    } @else if $size == 'h2' {
+        font-size: 2rem;
+        @include respond-to('md') { font-size: 2.25rem; }
+    } @else if $size == 'h3' {
+        font-size: 1.5rem;
+        @include respond-to('md') { font-size: 1.875rem; }
+    }
+}
+
+// Container
+@mixin container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+}
+
+// Button base
+@mixin button-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-sm $spacing-lg;
+    font-weight: 600;
+    border-radius: $border-radius-md;
+    transition: all $transition-base;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: $shadow-md;
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+// Card component
+@mixin card {
+    background: $color-background;
+    border-radius: $border-radius-lg;
+    padding: $spacing-lg;
+    box-shadow: $shadow-md;
+    transition: box-shadow $transition-base;
+    
+    &:hover {
+        box-shadow: $shadow-lg;
+    }
+}
